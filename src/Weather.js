@@ -5,7 +5,7 @@ import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ ready: false });
-  let [city, setCity] = useState(props.defaultcity);
+  let [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     console.log(response.data);
@@ -16,7 +16,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
       date: new Date(response.data.time * 1000),
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       city: response.data.city,
     });
   }
@@ -29,11 +29,11 @@ export default function Weather(props) {
   function handleSubmit(event) {
     event.preventDefault();
     //search for a city
+    search();
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
-    search();
   }
 
   if (weatherData.ready) {
