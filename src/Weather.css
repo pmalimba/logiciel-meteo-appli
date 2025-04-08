@@ -36,9 +36,10 @@
   list-style: none;
   text-align: left;  
 }
-.Weather img {
+.Weather canvas {
     height: 64px;
     width: 64px;
+    margin-top: 5px;
     margin-right: 10px;
 }
 .Weather .temperature {

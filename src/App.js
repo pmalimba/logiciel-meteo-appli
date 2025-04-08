@@ -25,6 +25,11 @@ export default function App() {
             open-sourced on GitHub {""}
           </a>
           and is{" "}
+          <a
+            href="https://logiciel-react-appli.netlify.app/"
+            rel="noreferrer"
+            target="_blank"
+          ></a>
         </footer>
       </div>
     </div>
