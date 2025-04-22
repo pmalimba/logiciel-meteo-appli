@@ -21,8 +21,6 @@
   text-align: left;
 }
 .Weather canvas {
-  height: 64px;
-  width: 64px;
   margin-top: 5px;
   margin-right: 10px;
 }
