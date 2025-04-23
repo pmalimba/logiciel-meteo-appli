@@ -29,7 +29,9 @@ export default function App() {
             href="https://logiciel-react-appli.netlify.app/"
             rel="noreferrer"
             target="_blank"
-          ></a>
+          >
+            hosted on Netlify
+          </a>
         </footer>
       </div>
     </div>

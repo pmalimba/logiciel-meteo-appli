@@ -7,7 +7,7 @@ export default function WeatherForecast() {
       <div className="row">
         <div className="col">
           Thu
-          <WeatherIcon code="clear-sky-day" />
+          <WeatherIcon code="01d" />
           19 10
         </div>
       </div>
