@@ -18,9 +18,9 @@ export default function Weather(props) {
       description: response.data.condition.description,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
-      date: new Date(response.data.dt * 1000),
-      icon: response.data.condition.icon,
-      city: response.data.name,
+      date: new Date(response.data.time * 1000),
+      icon: response.data.icon,
+      city: response.data.city,
     });
   }
   function search() {
