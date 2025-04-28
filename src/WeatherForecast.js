@@ -10,10 +10,10 @@ export default function WeatherForecast(props) {
   useEffect(() => {
     setLoaded(false);
 
-    const apiKey = "912e0744c9d1c381a798531725d62504";
+    const apiKey = "51035d71b84ac5cet75eof3fb55a84d0";
     const longitude = props.coordinates.longitude;
     const latitude = props.coordinates.latitude;
-    const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?latitude=${latitude}&longitude=${longitude}&appid=${apiKey}&units=metric`;
+    const apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then((response) => {
       setForecast(response.data.daily);
@@ -27,14 +27,14 @@ export default function WeatherForecast(props) {
         <div className="row">
           <div className="col">
             <div className="WeatherForecast-day">Thu</div>
-            <WeatherIcon code="Clear Sky" size={36} />
+            <WeatherIcon code="clear-sky" size={36} />
             <div className="WeatherForecast-temperatures">
               <span className="WeatherForecast-temperatures-max">
-                {Math.round(forecast[0].temp.max)}°
+                {Math.round(forecast[0].temperature.maximum)}°
               </span>
               <span className="WeatherForecast-temperatures-min">
                 {" "}
-                {Math.round(forecast[0].temp.min)}°
+                {Math.round(forecast[0].temperature.minimum)}°
               </span>
             </div>
           </div>
