@@ -12,14 +12,14 @@ export default function App() {
           This project was coded by {""}
           <a
             href="https://my-ownportfolio-project.netlify.app"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Paula Malimba {""}
           </a>
           and is{" "}
           <a
             href="https://github.com/pmalimba/logiciel-meteo-appli"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             target="_blank"
           >
             open-sourced on GitHub {""}
@@ -27,7 +27,7 @@ export default function App() {
           and is{" "}
           <a
             href="https://logiciel-react-appli.netlify.app/"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             target="_blank"
           >
             hosted on Netlify
