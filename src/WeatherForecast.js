@@ -27,7 +27,7 @@ export default function WeatherForecast(props) {
         <div className="row">
           <div className="col">
             <div className="WeatherForecast-day">Thu</div>
-            <WeatherIcon code="clear-sky" size={36} />
+            <WeatherIcon code="clear-sky-day" size={36} />
             <div className="WeatherForecast-temperatures">
               <span className="WeatherForecast-temperatures-max">
                 {Math.round(forecast[0].temperature.maximum)}°
